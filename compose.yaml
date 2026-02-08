@@ -49,9 +49,12 @@ services:
                 - '${DB_USERNAME}'
             retries: 3
             timeout: 5s
+
 networks:
     sail:
         driver: bridge
+
 volumes:
     sail-pgsql:
         driver: local
+
